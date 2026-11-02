@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+ 
+Sitemap: https://glen-khaal0.github.io/WEDE5020-PART3/sitemap.xml
+ 
