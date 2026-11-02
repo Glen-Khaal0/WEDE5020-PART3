@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://tile.openstreetmap.org https://images.unsplash.com https://cdnjs.cloudflare.com; connect-src 'self' https://formspree.io; frame-src 'none'; object-src 'none'; base-uri 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Contact 1Nest Poultry | Zebediela, Limpopo Farm &amp; Store</title>
+    <meta name="description" content="Contact 1Nest Poultry Farm in Zebediela, Limpopo. Find our farm and central store on the map, call us or send a message. Open Monday to Saturday.">
+    <meta name="keywords" content="contact 1Nest Poultry, Zebediela poultry farm, farm location Limpopo, Zebediela Plaza store">
+    <meta name="author" content="1Nest Poultry Farm">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://glen-khaal0.github.io/WEDE5020-PART3/contact.html">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="1Nest Poultry Farm">
+    <meta property="og:title" content="Contact 1Nest Poultry | Zebediela, Limpopo Farm &amp; Store">
+    <meta property="og:description" content="Contact 1Nest Poultry Farm in Zebediela, Limpopo. Find our farm and central store on the map, call us or send a message. Open Monday to Saturday.">
+    <meta property="og:url" content="https://glen-khaal0.github.io/WEDE5020-PART3/contact.html">
+    <meta property="og:image" content="https://glen-khaal0.github.io/WEDE5020-PART3/images/1nest-poultry-logo.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="css_asserts/mycssstyle.css">
+  
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"1Nest Poultry Farm","description":"Free-range eggs and fresh chicken from Zebediela, Limpopo.","url":"https://glen-khaal0.github.io/WEDE5020-PART3/","image":"https://glen-khaal0.github.io/WEDE5020-PART3/images/1nest-poultry-logo.png","telephone":"+27156837426","email":"hello@1nestpoultry.co.za","address":{"@type":"PostalAddress","addressLocality":"Zebediela","addressRegion":"Limpopo","addressCountry":"ZA"},"geo":{"@type":"GeoCoordinates","latitude":-24.4884,"longitude":29.3518},"openingHours":"Mo-Sa 08:00-17:00"}</script>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Logo.png" alt="1Nest Poultry Logo" width="200" height="200">
+                <span>1Nest Poultry</span>
+            </a>
+
+            <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav id="mainNav" aria-label="Main navigation">
+                <ul class="horizontal-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Let's talk poultry!</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="content-stack">
+
+            <div class="card-box">
+                <h2>Contact Details</h2>
+                <p class="intro-text">Whether you're a restaurant after a reliable supplier, a household wanting a standing order, or just an organic food lover — reach out and we'll get back to you. We promise an eggxcellent service.</p>
+
+                <ul class="details-list">
+                    <li><b>Farm Office:</b> Zebediela, Limpopo, South Africa</li>
+                    <li><b>Phone:</b> +27 15 683 7426</li>
+                    <li><b>Email:</b> hello@1nestpoultry.co.za</li>
+                    <li><b>Hours:</b> Monday - Saturday, 08:00 - 17:00</li>
+                </ul>
+            </div>
+
+            <div class="card-box">
+                <h2>Send Us a Message</h2>
+                <p class="card-subtext">Fields marked <span class="required-mark">*</span> are required. We will prepare an email that you can send to hello@1nestpoultry.co.za.</p>
+
+                <form class="enquiry-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                    <div class="form-field">
+                        <label for="ctName">Full Name <span class="required-mark">*</span></label>
+                        <input type="text" id="ctName" name="name" placeholder="Your name" aria-describedby="ctName-error" autocomplete="name" required minlength="2" maxlength="60">
+                        <span class="field-error" id="ctName-error"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="ctEmail">Email Address <span class="required-mark">*</span></label>
+                        <input type="email" id="ctEmail" name="email" placeholder="you@example.com" aria-describedby="ctEmail-error" autocomplete="email" required>
+                        <span class="field-error" id="ctEmail-error"></span>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-field">
+                        <label for="ctPhone">Phone Number</label>
+                        <input type="tel" id="ctPhone" name="phone" placeholder="072 345 6789" aria-describedby="ctPhone-error" autocomplete="tel">
+                        <span class="field-error" id="ctPhone-error"></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="ctType">Message Type <span class="required-mark">*</span></label>
+                        <select id="ctType" name="type" required aria-describedby="ctType-error"><option value="" disabled selected>Select a type</option><option value="General question">General question</option><option value="Feedback or compliment">Feedback or compliment</option><option value="Complaint">Complaint</option><option value="Partnership or sponsorship">Partnership or sponsorship</option><option value="Volunteering or jobs">Volunteering or jobs</option><option value="Other">Other</option></select>
+                        <span class="field-error" id="ctType-error"></span>
+                    </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="ctMessage">Your Message <span class="required-mark">*</span></label>
+                        <textarea id="ctMessage" name="message" required minlength="20" maxlength="1000" placeholder="How can we help?" aria-describedby="ctMessage-error ctCount"></textarea>
+                        <span class="form-hint"><span id="ctCount">0 / 1000</span> (minimum 20 characters)</span>
+                        <span class="field-error" id="ctMessage-error"></span>
+                    </div>
+                    <div class="form-field">
+                        <label class="check-label"><input type="checkbox" id="ctConsent" name="consent" required aria-describedby="ctConsent-error"> I agree that 1Nest Poultry may contact me about this message. <span class="required-mark">*</span></label>
+                        <span class="field-error" id="ctConsent-error"></span>
+                    </div>
+                    <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" id="ctWebsite" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+                    <button type="submit" class="submit-btn">Prepare Email</button>
+                    <div class="form-status" id="ctStatus" role="alert"></div>
+                </form>
+
+                <div id="emailPreview" class="result-box" hidden tabindex="-1">
+                    <h3>Your email is ready</h3>
+                    <p>Check the details, then press <strong>Send email</strong> to open it in your email app, addressed to hello@1nestpoultry.co.za.</p>
+                    <p><strong>Subject:</strong> <span id="previewSubject"></span></p>
+                    <pre class="email-preview" id="previewBody"></pre>
+                    <div class="modal-actions">
+                        <a class="btn btn-primary" id="sendMail" href="#">Send email</a>
+                        <button type="button" class="btn btn-outline" id="copyEmail">Copy text</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <h2>Locations</h2>
+                <p class="card-subtext">Choose a location to see it on the map.</p>
+
+                <div class="map-buttons">
+                    <button type="button" class="btn btn-outline" data-location="farm">Farm</button>
+                    <button type="button" class="btn btn-outline" data-location="store">Central Store</button>
+                    <button type="button" class="btn btn-outline active" data-location="both">Show both</button>
+                </div>
+
+                <div id="map" role="region" aria-label="Map showing the 1Nest Poultry farm and central store in Zebediela"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>1Nest Poultry</h4>
+                    <p class="footer-tagline">Putting Zebediela on the map through sustainable poultry farming.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="enquiries.html">Enquiries</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 1Nest Poultry Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" defer></script>
+    <script src="js_asserts/myscript.js" defer></script>
+</body>
+</html>
